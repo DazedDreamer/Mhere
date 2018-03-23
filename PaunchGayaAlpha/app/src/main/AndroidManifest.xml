@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myCompany.poojapreet.paunchgayaalpha"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS">
+
+    </uses-permission>
+    <supports-screens android:smallScreens="true"
+
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/mherefin"
+        android:label="Mhere"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.myCompany.poojapreet.paunchgayaalpha.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.myCompany.poojapreet.paunchgayaalpha.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.myCompany.poojapreet.paunchgayaalpha.Choose_Recipients"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="Choose Recipients">
+        </activity>
+    </application>
+
+
+</manifest>
